@@ -1,25 +1,27 @@
 import './App.css'
-import { useState } from 'react'
+// import { useState } from 'react'
 import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
+import Bmi from './pages/Bmi'
 
 function App() {
-  const [counter, setCounter] = useState<number>(0)
+  // const [counter, setCounter] = useState<number>(0)
   const isLogin:boolean = false;
 
-  const increaseCount = () => {
-    setCounter(counter + 1)
-  }
+  // const increaseCount = () => {
+  //   setCounter(counter + 1)
+  // }
 
-  const decreaseCount = () => {
-    setCounter(counter - 1)
-  }
+  // const decreaseCount = () => {
+  //   setCounter(counter - 1)
+  // }
 
   return (
     <>
       {/* <button onClick={increaseCount}>Increase</button>
       <button onClick={decreaseCount}>Decrease</button> */}
       {isLogin ? <Dashboard ></Dashboard> : <Login ></Login>}
+      <Bmi></Bmi>
       {/* <Header title="My App" counter={counter}>
         Now Counting = {counter}
       </Header>
