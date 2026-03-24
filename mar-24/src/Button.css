@@ -1,0 +1,34 @@
+.custom-btn {
+  --btn-accent: #2563eb;
+  display: inline-block;
+  width: auto;
+  border: 1px solid var(--btn-accent);
+  border-radius: 8px;
+  padding: 0.55rem 1rem;
+  margin: 8px 6px;
+  color: #ffffff;
+  font-family: var(--heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  background: var(--btn-accent);
+  box-shadow: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.custom-btn:hover {
+  background: color-mix(in srgb, var(--btn-accent) 88%, black);
+  border-color: color-mix(in srgb, var(--btn-accent) 80%, black);
+}
+
+.custom-btn:active {
+  background: color-mix(in srgb, var(--btn-accent) 76%, black);
+}
+
+.custom-btn:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--btn-accent) 45%, white);
+  outline-offset: 2px;
+}
